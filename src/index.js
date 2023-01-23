@@ -1,7 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+const days = ['sunday', 'monday', 'tuesday'];
 
-const element = <h1>Hello World</h1>; //JSX element i.e. javascript XML element
+const items1 = obj.map(function(day){
+    return "<li>"+ day +"</li>";
+})
 
-ReactDOM.render(element, document.getElementById("root"));
+console.log(items1);
+const items2 = obj.map( day =>`<li> ${day}</li>`); //day where this..
 
+console.log(items2);
